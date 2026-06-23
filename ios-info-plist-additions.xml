@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+
+<!--
+  ─────────────────────────────────────────────────────────────────────────────
+  NexGenLife — Info.plist additional keys
+  Copy these keys into ios/App/App/Info.plist after running `npx cap add ios`
+  They must sit inside the top-level <dict> block of that file.
+  ─────────────────────────────────────────────────────────────────────────────
+-->
+
+<plist version="1.0">
+<dict>
+
+  <!-- ── App Display ─────────────────────────────────────────────── -->
+  <key>CFBundleDisplayName</key>
+  <string>NexGenLife</string>
+
+  <key>CFBundleName</key>
+  <string>NexGenLife</string>
+
+  <key>CFBundleIdentifier</key>
+  <string>com.W9464NC4J7.nexgenlife</string>
+
+  <key>CFBundleShortVersionString</key>
+  <string>1.0.0</string>
+
+  <key>CFBundleVersion</key>
+  <string>1</string>
+
+  <!-- ── Network / Security ─────────────────────────────────────── -->
+  <!-- Allow outbound connections to Supabase, Stripe, Anthropic, Formspree -->
+  <key>NSAppTransportSecurity</key>
+  <dict>
+    <key>NSAllowsArbitraryLoads</key>
+    <false/>
+    <key>NSExceptionDomains</key>
+    <dict>
+      <key>supabase.co</key>
+      <dict>
+        <key>NSExceptionAllowsInsecureHTTPLoads</key>
+        <false/>
+        <key>NSIncludesSubdomains</key>
+        <true/>
+      </dict>
+      <key>stripe.com</key>
+      <dict>
+        <key>NSExceptionAllowsInsecureHTTPLoads</key>
+        <false/>
+        <key>NSIncludesSubdomains</key>
+        <true/>
+      </dict>
+      <key>anthropic.com</key>
+      <dict>
+        <key>NSExceptionAllowsInsecureHTTPLoads</key>
+        <false/>
+        <key>NSIncludesSubdomains</key>
+        <true/>
+      </dict>
+      <key>formspree.io</key>
+      <dict>
+        <key>NSExceptionAllowsInsecureHTTPLoads</key>
+        <false/>
+        <key>NSIncludesSubdomains</key>
+        <true/>
+      </dict>
+    </dict>
+  </dict>
+
+  <!-- ── Permission Usage Descriptions (required by App Store) ───── -->
+  <key>NSCameraUsageDescription</key>
+  <string>NexGenLife uses the camera to let you attach supporting documents and images to your regulatory document prompts.</string>
+
+  <key>NSPhotoLibraryUsageDescription</key>
+  <string>NexGenLife accesses your photo library so you can attach reference images and documents to your regulatory submissions.</string>
+
+  <key>NSPhotoLibraryAddUsageDescription</key>
+  <string>NexGenLife can save generated documents and exports to your photo library.</string>
+
+  <key>NSFaceIDUsageDescription</key>
+  <string>NexGenLife uses Face ID for quick, secure sign-in to protect your regulatory documents.</string>
+
+  <!-- ── UI Appearance ───────────────────────────────────────────── -->
+  <key>UIStatusBarStyle</key>
+  <string>UIStatusBarStyleLightContent</string>
+
+  <key>UIViewControllerBasedStatusBarAppearance</key>
+  <true/>
+
+  <key>UISupportedInterfaceOrientations</key>
+  <array>
+    <string>UIInterfaceOrientationPortrait</string>
+    <string>UIInterfaceOrientationLandscapeLeft</string>
+    <string>UIInterfaceOrientationLandscapeRight</string>
+  </array>
+
+  <key>UISupportedInterfaceOrientations~ipad</key>
+  <array>
+    <string>UIInterfaceOrientationPortrait</string>
+    <string>UIInterfaceOrientationPortraitUpsideDown</string>
+    <string>UIInterfaceOrientationLandscapeLeft</string>
+    <string>UIInterfaceOrientationLandscapeRight</string>
+  </array>
+
+  <!-- ── Safari / WebView ───────────────────────────────────────── -->
+  <key>WKAppBoundDomains</key>
+  <array>
+    <string>nexgenlife.studio</string>
+  </array>
+
+</dict>
+</plist>
