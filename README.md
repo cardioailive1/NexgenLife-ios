@@ -4,8 +4,11 @@
 This folder wraps the NexGenLife web app in a native iOS shell using **Capacitor**.
 The HTML file is NOT modified — it runs as-is inside a native WebView.
 
-Building and submitting to the App Store requires a **Mac with Xcode**. 
+Building and submitting to the App Store requires a **Mac with Xcode**.
 Everything here is the complete project scaffold — run the commands below on your Mac.
+
+🌐 **Platform:** https://nesgenlife.studio  
+🏢 **Company:** https://corverxis.com
 
 ---
 
@@ -113,7 +116,7 @@ Go to https://appstoreconnect.apple.com → Your App → In-App Purchases → +
 - Set **no free trial** for both
 - Submit IAP items for review alongside the app
 
-> Note: Enterprise plan is sales-led (email support@corverxis.com) — no IAP needed.
+> Note: Enterprise plan is sales-led — contact support@corverxis.com or visit https://corverxis.com. No IAP needed for this tier.
 
 ---
 
@@ -147,9 +150,10 @@ Test these flows before submitting:
 ### Then in App Store Connect:
 1. Select your uploaded build
 2. Fill in: Description, Keywords, Screenshots (see `APP_STORE_METADATA.md`)
-3. Set Privacy Policy URL to: `https://nexgenlife.studio`
-4. Add demo account credentials for App Review team
-5. Submit for review
+3. Set Privacy Policy URL to: `https://nesgenlife.studio`
+4. Set Marketing URL to: `https://corverxis.com`
+5. Add demo account credentials for App Review team
+6. Submit for review
 
 Average App Store review time: **24–48 hours**
 
@@ -183,5 +187,6 @@ npx cap sync ios
 ## Support
 
 **Corverxis Technologies Ltd**  
-support@corverxis.com  
-https://nexgenlife.studio
+📧 support@corverxis.com  
+🌐 https://nesgenlife.studio  
+🏢 https://corverxis.com
