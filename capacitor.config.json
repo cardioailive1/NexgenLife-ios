@@ -1,0 +1,46 @@
+{
+  "appId": "com.W9464NC4J7.nexgenlife",
+  "appName": "NexGenLife",
+  "webDir": "www",
+  "bundledWebRuntime": false,
+  "ios": {
+    "contentInset": "automatic",
+    "allowsLinkPreview": false,
+    "scrollEnabled": true,
+    "limitsNavigationsToAppBoundDomains": false,
+    "preferredContentMode": "mobile",
+    "backgroundColor": "#0B1725"
+  },
+  "server": {
+    "iosScheme": "https",
+    "allowNavigation": [
+      "*.supabase.co",
+      "*.stripe.com",
+      "buy.stripe.com",
+      "*.anthropic.com",
+      "formspree.io",
+      "api.anthropic.com"
+    ]
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 2000,
+      "launchAutoHide": true,
+      "backgroundColor": "#0B1725",
+      "androidSplashResourceName": "splash",
+      "androidScaleType": "CENTER_CROP",
+      "showSpinner": false,
+      "splashFullScreen": true,
+      "splashImmersive": true
+    },
+    "StatusBar": {
+      "style": "Dark",
+      "backgroundColor": "#0B1725"
+    },
+    "Keyboard": {
+      "resize": "body",
+      "style": "dark",
+      "resizeOnFullScreen": true
+    }
+  }
+}
